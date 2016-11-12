@@ -6,8 +6,10 @@ apt-get install xxx     |安装软件
 apt-get install -f      |安装软件时修复依赖
 apt-get remove xxx      |删除软件
 apt-get update          |更新源
-chmod [-v -R] 777 xxx   |给xxx完全控制权限，-v显示结果，-R给子目录权限，注意给文件权限会修改文件。        
-apt-cache search XXX    |搜索软件        
+apt-cache search XXX    |搜索软件
+apt-cache show xxx      |显示软件信息
+dpkg [-i -r] xxx.deb    |deb文件的安装和卸载   
+chmod [-v -R] 777 xxx   |给xxx完全控制权限，-v显示结果，-R给子目录权限，注意给文件权限会修改文件。     
 mv                      |剪切           
 cp                      |复制
 cat fname               |显示内容到命令行，加上重定向就能复制了
